@@ -38,7 +38,7 @@ Because the code was
                                          
         return arr;
                                          
-    }`
+    }
                                        
                                        
 This code was failing because it was trying to copy the elements of newArray to arr. But all elements of newArray are 0. It was also returning arr when it was supposed to return newArray. To fix this, I simply swapped arr and newArray in the for loop, and returned newArray.
