@@ -2,7 +2,7 @@
 
 # Part 1:StringServer
 
-![Screenshot](SS first add.png)
+![SS first add.png](SS first add.png)
 * Image source: https://en.wikipedia.org/wiki/The_Works_(Queen_album)
 
 
