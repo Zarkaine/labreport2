@@ -6,6 +6,7 @@ First I had to create the server. I did this with the method given before for nu
 ![Image](https://github.com/Zarkaine/labreport2/blob/main/SS%20first%20add.png)
 I have an if statment checking if /add-message is in the url, then adds the string following the s to the arrayList. Then it copies it to the string, and returns the string. 
   
+![Kiku](images/firstAdd.png)
 
 ![Image](https://github.com/Zarkaine/labreport2/blob/main/SS%20second%20add.png)
  This is the second message. After using /add-message a second time, it displays it & the previous messages. I originally had an issue where it would re-add previous add-messages to the string. So if you called "first", "second", and "third", it would display "first first second first second third". I resolved this by adding an if statment, so the each item from the arraylist would only be added once. There may have been a simpler/better way to do this, but I have a migraine & Im definitely out of time.
