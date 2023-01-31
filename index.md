@@ -27,11 +27,17 @@ When I tried running testReserve, it failed and gave return "arrays first differ
 Because the code was
 #code block
   `static int[] reversed(int[] arr) {
+  
         ``int[] newArray = new int[arr.length];
+  
         ``for (int i = 0; i < arr.length; i += 1) {
+                                         
             ```arr[i] = newArray[arr.length - i - 1];
+                                         
         ``}
+                                         
         ``return arr;
+                                         
     `}
                                        
                                        
