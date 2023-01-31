@@ -4,9 +4,11 @@
 First I had to create the server. I did this with the method given before for numberServer. I created an int called port, and called Server.start(port, new StringServerHandler()); StringServerHandler implements URLHandler. It has 3 instance variables, 2 arrayLists and one String. StringServerHandler has a single method, handleRequest. This method returns a String, and takes a URI as the argument. If the user adds "/add-message?s=<string>" to the url, it will then display the string, as shown below.
  
 ![Image](https://github.com/Zarkaine/labreport2/blob/main/images/firstAdd.png)
+ 
 I have an if statment checking if /add-message is in the url, then adds the string following the s to the arrayList. Then it copies it to the string, and returns the string. 
 
 ![Image](https://github.com/Zarkaine/labreport2/blob/main/images/secondAdd.png)
+ 
  This is the second message. After using /add-message a second time, it displays it & the previous messages. I originally had an issue where it would re-add previous add-messages to the string. So if you called "first", "second", and "third", it would display "first first second first second third". I resolved this by adding an if statment, so the each item from the arraylist would only be added once. There may have been a simpler/better way to do this, but I have a migraine & Im definitely out of time.
   
   
