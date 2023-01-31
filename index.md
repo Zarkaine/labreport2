@@ -55,3 +55,5 @@ This code was failing because it was trying to copy the elements of newArray to 
   
   
 So now, the elements in arr were being copied into newArray (in reverse order), and newArray was being returned.
+  
+#Part 3: I learned a lot this week. For one, I learned how to make a server in java and use the URI methods. I also learned how to use Junit tests which I can only imageine would be very helpful. 
