@@ -26,32 +26,32 @@ When I tried running testReserve, it failed and gave return "arrays first differ
 
 Because the code was
   `
-  `static int[] reversed(int[] arr) {
+  static int[] reversed(int[] arr) {
   
-        `int[] newArray = new int[arr.length];
+        int[] newArray = new int[arr.length];
   
-        `for (int i = 0; i < arr.length; i += 1) {
+        for (int i = 0; i < arr.length; i += 1) {
                                          
-            `arr[i] = newArray[arr.length - i - 1];
+            arr[i] = newArray[arr.length - i - 1];
                                          
         }
                                          
-        `return arr;
+        return arr;
                                          
-    `}
+    }`
                                        
                                        
 This code was failing because it was trying to copy the elements of newArray to arr. But all elements of newArray are 0. It was also returning arr when it was supposed to return newArray. To fix this, I simply swapped arr and newArray in the for loop, and returned newArray.
        `                                 
-  `int[] newArray = new int[arr.length];
+  int[] newArray = new int[arr.length];
                                         
-    `for (int i = 0; i < arr.length; i++) {
+    for (int i = 0; i < arr.length; i++) {
   
-      `newArray[i] = arr[arr.length - i - 1];
+      newArray[i] = arr[arr.length - i - 1];
   
-    `}
+    }
   
-    `return newArray;
+    return newArray;`
   
   
 So now, the elements in arr were being copied into newArray (in reverse order), and newArray was being returned.
