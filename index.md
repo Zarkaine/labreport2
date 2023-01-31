@@ -2,7 +2,7 @@
 
 # Part 1:StringServer
 
-[Image](https://github.com/Zarkaine/labreport2/blob/main/SS%20first%20add.png)
+![Image](https://github.com/Zarkaine/labreport2/blob/main/SS%20first%20add.png)
 * Image source: https://en.wikipedia.org/wiki/The_Works_(Queen_album)
 
 
