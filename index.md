@@ -25,7 +25,7 @@ When I tried running testReserve, it failed and gave return "arrays first differ
   
 
 Because the code was
-  
+  `
   `static int[] reversed(int[] arr) {
   
         `int[] newArray = new int[arr.length];
@@ -42,7 +42,7 @@ Because the code was
                                        
                                        
 This code was failing because it was trying to copy the elements of newArray to arr. But all elements of newArray are 0. It was also returning arr when it was supposed to return newArray. To fix this, I simply swapped arr and newArray in the for loop, and returned newArray.
-                                        
+       `                                 
   `int[] newArray = new int[arr.length];
                                         
     `for (int i = 0; i < arr.length; i++) {
