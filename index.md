@@ -4,6 +4,8 @@
 First I had to create the server. I did this with the method given before for numberServer. I created an int called port, and called Server.start(port, new StringServerHandler()); StringServerHandler implements URLHandler. It has 3 instance variables, 2 arrayLists and one String. StringServerHandler has a single method, handleRequest. This method returns a String, and takes a URI as the argument. If the user adds "/add-message?s=<string>" to the url, it will then display the string, as shown below.
   
  ![](images/reverseTestFail.png?raw=true)
+  
+  
 ![Image](https://github.com/Zarkaine/labreport2/blob/main/SS%20first%20add.png)
 I have an if statment checking if /add-message is in the url, then adds the string following the s to the arrayList. Then it copies it to the string, and returns the string. 
   
